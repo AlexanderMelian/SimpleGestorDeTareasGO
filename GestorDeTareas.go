@@ -66,6 +66,7 @@ func main() {
 			fmt.Println("Ingrese el número de tarea que quiere quitar")
 			dato := leerDatos()
 			opcion, _ := strconv.Atoi(dato)
+			opcion = opcion - 1
 			lista.quitarTarea(opcion)
 		case 3:
 			fmt.Println("Ingrese el número de la tarea que quiere marcar")
